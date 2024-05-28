@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Generate Synthetic Data for Automotive and Manufacturing use cases with Amazon Bedrock and Third-Party Simulators
 
 In this post, we aim to show how autonomous mobility teams can integrate Amazon Bedrock and third-party simulators to boost automotive and manufacturing synthetic image and telemetry generation by providing more accurate and realistic data for testing and validation purposes. This approach can cut time and costs related to scenario generation and data collection for various use cases such as Autonomous mobility, model training on visual and other sensory data, etc. Another advantage of integrating with third-party simulators is that automotive teams need not overhaul the process being used currently for the synthetic generation scenarios. 
