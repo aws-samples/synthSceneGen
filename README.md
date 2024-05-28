@@ -41,22 +41,4 @@ c. can you modify the code to spawn a different vehicle in a different random lo
 
 ## Cleanup
 Make sure to terminate the instance if you are running this on a Cloud9 instance or EC2 instance. Go to the respective AWS service page via the console and terminate the instances.
-=======
-## My Project
 
-TODO: Fill this README out!
-
-Be sure to:
-
-* Change the title in this README
-* Edit your repository description on GitHub
-
-## Security
-
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
-
-## License
-
-This library is licensed under the MIT-0 License. See the LICENSE file.
-
->>>>>>> github/main
