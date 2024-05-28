@@ -6,11 +6,11 @@ For this blog, we will use an open-source simulator CARLA, which can be interact
 ![alt text](image-arch.png)
 
 ## Pre-requisites
-AWS Cloud9 IDE or any other IDE with python installed (preferably 3.8 and above)
-Streamlit library 
-docker runtime
+- AWS Cloud9 IDE or any other IDE with python installed (preferably 3.8 and above)
+- Streamlit library (using PyPi: pip install streamlit)
+- Docker runtime
 
-## Implelemtation
+## Implementation
 This reference architecture is implemented with 3 main files. In actual scaled out production versions, the architecture can encompass various components as per the Well-Architected Frameworks. For example, this post the ingestion pipelines, LLM response module and the CARLA client are all running in a Cloud9 environment. In production use cases, these components should be running in different isolated components.
 
 •	Claude3_rag_python_faiss_load_v2.py -> This contains the code for ingestion pipeline the document and context code to the RAG vector database with custom splitter.
