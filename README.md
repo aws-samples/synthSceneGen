@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Generate Synthetic Data for Automotive and Manufacturing use cases with Amazon Bedrock and Third-Party Simulators
 
 In this post, we aim to show how autonomous mobility teams can integrate Amazon Bedrock and third-party simulators to boost automotive and manufacturing synthetic image and telemetry generation by providing more accurate and realistic data for testing and validation purposes. This approach can cut time and costs related to scenario generation and data collection for various use cases such as Autonomous mobility, model training on visual and other sensory data, etc. Another advantage of integrating with third-party simulators is that automotive teams need not overhaul the process being used currently for the synthetic generation scenarios. 
@@ -40,3 +41,22 @@ c. can you modify the code to spawn a different vehicle in a different random lo
 
 ## Cleanup
 Make sure to terminate the instance if you are running this on a Cloud9 instance or EC2 instance. Go to the respective AWS service page via the console and terminate the instances.
+=======
+## My Project
+
+TODO: Fill this README out!
+
+Be sure to:
+
+* Change the title in this README
+* Edit your repository description on GitHub
+
+## Security
+
+See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+
+## License
+
+This library is licensed under the MIT-0 License. See the LICENSE file.
+
+>>>>>>> github/main
