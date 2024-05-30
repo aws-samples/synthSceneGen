@@ -2,14 +2,14 @@ import subprocess
 import os
 import sys
 import traceback
-import shlex
+import pexpect
 
 
 def validate_code():
-    # Assuming your shell script is named 'myscript.sh'
-    script_path = shlex.quote(os.path.join('/home/ubuntu/environment/carla-agent-test', 'refresh-env.sh'))
-    result = subprocess.run(['sh', script_path])
-    cmd_args = [
+    script_path = os.path.join('/home/ubuntu/environment/carla-agent-test', 'refresh-env.sh')
+    child = pexpect.spawn('sh', [script_path])
+    child.expect(pexpect.EOF)  # Wait for the script to finish
+    docker_cmd = [
     "sudo",
     "docker",
     "run",
@@ -24,9 +24,11 @@ def validate_code():
     "carla-1",
     "carla-agent-env:latest"]
     
-    cmd = shlex.join(cmd_args)
+    docker_cmd_str = ' '.join(docker_cmd)
+    child = pexpect.spawn('/bin/bash', ['-c', docker_cmd_str])
     with open("docker.log", "wb") as log_file:
-        subprocess.run(cmd, shell=True, stdout=log_file)
+        child.logfile = log_file
+        child.expect(pexpect.EOF)  # Wait for the Docker command to finish
     
     # Read the contents of the log file
     with open("docker.log", "r") as log_file:
