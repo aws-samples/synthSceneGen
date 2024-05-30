@@ -26,7 +26,7 @@ def validate_code():
     
     cmd = shlex.join(cmd_args)
     with open("docker.log", "wb") as log_file:
-        subprocess.run(cmd, stdout=log_file)
+        subprocess.run(cmd, shell=True, stdout=log_file)
     
     # Read the contents of the log file
     with open("docker.log", "r") as log_file:
